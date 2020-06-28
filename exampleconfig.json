@@ -1,0 +1,9 @@
+{
+    "user": "username of user to track",
+    "webhook": "url of the discord webhook",
+    "mentionEveryone": true,
+    "consumer_key": "api key",
+    "consumer_secret": "api secret key",
+    "access_token_key": "access token",
+    "access_token_secret": "access token secret"
+}

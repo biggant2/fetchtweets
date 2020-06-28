@@ -1,0 +1,16 @@
+{
+  "name": "fetchtweets",
+  "version": "1.0.0",
+  "description": "Get a users tweets in real time and send a discord message if a new one is found",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "biggant2",
+  "license": "ISC",
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "twitter-lite": "^0.14.0"
+  }
+}
