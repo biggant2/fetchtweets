@@ -26,6 +26,9 @@ async function getUserId(username) {
 }
 
 function sendWebhook(tweet) {
+    if(tweet.in_reply_to_status_id && tweet.user.screen_name !== config.user) return;
+    if(tweet.retweeted_status && tweet.user.screen_name !== config.user) return;
+
     let url = `https://twitter.com/${tweet.user.screen_name}/status/${tweet.id_str}`;
     let content = (config.mentionEveryone) ? `${url} @everyone` : url;
     let data = {
